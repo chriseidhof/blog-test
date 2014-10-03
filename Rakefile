@@ -5,11 +5,8 @@ require 'middleman-aws'
 
 desc 'Deploy to S3 and invalidate Cloudfront after a Git commit/push'
 task :deploy do
-  puts '## Deploy starting...'
-  credentials!
-  aws_env = "AWS_ACCESS_KEY=#{credentials['access_key_id']} AWS_SECRET=#{credentials['secret_access_key']}"
   puts '## Syncing to S3...'
-  system "#{aws_env} bundle exec middleman s3_sync"
+  system "bundle exec middleman s3_sync"
   # puts '## Invalidating cloudfront...'
   # system "#{aws_env}  bundle exec middleman invalidate"
   puts '## Deploy complete.'

@@ -5,5 +5,5 @@ script: bundle exec middleman build
 after_success: bundle exec rake publish
 env:
   global:
-  - secure: N6Da0zAQas3BF9WmFbEgsF6ZLdzp4chWBdfzVW3jUeHdiMW6szkZhUBhDSugCAdNSlQBzBhOEfCDQQyLQevWYG8ErLCNNihmcDmDWvVjAKJ/opKqL7gbm+7YGAWoxwBz1/M4YK8/DQa3oxIVDkXuCMd6F+tecZpoEwkapQzWTt0=
-  - secure: EZGn5BZxCUhmvhZuoHgRgqEKqesc1D6p56LGpfsGgITCkXU2Gh8WHI+da3EeOp08VjT2w83fjSeDwJsQa2tDmse0BzvsgQawUZ0yzi3elOcRu1MWH+oALAzJ2FPfoYo4Vs8eaPb/NxDDOwW4sOuiiP6B0boAfmqhfCX7i+JzdRA=
+  - secure: EgwobJja0sanbQr1Rv2IOVheZxTvnyRllO3iiZ4GirHbOuSl/1USkrMKAITWAHjbQX0pWdoMaWzkyF4H2R5WnaXXBwuGORPQCXKqCxDYJJai2+8pdLnx845m16QSpT9/w5W4PyJD06E3jht/Sa8pmrEBDCesbMjh0+Ul/343P7I=
+  - secure: A0Zw8ERA/KCKIj/WOf3SA3/tOvYg78Uj67JQZ2s5Fm+abZuL4sXRqaRWZtgnZhumHCYKtGTPxnu1xT7V90T38gCJAUiAn1hYuVtHwZf6l1LMTVz23z04ZSs9KvpeRWXl67Q6Hrrjxdi6zzPoJRGtgM9Qo8e+SiLLhteAzVyHJwc=
