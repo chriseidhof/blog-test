@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'middleman-aws'
 
-# Rake::Task['mm:deploy'].clear
-
 desc 'Deploy to S3 and invalidate Cloudfront after a Git commit/push'
 task :deploy do
   puts '## Syncing to S3...'
