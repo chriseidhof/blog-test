@@ -1,3 +1,33 @@
+SITE_NAME                       = 'Chris Eidhof'
+URL_ROOT                        = 'http://chris-blog-test.s3-website-us-east-1.amazonaws.com/'
+AWS_BUCKET                      = 'chris-blog-test'
+AWS_ACCESS_KEY                  = ENV['AWS_ACCESS_KEY']
+AWS_SECRET                      = ENV['AWS_SECRET']
+
+###
+# S3 Sync
+###
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = AWS_BUCKET # The name of the S3 bucket you are targeting. This is globally unique.
+  # s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket. (S3 no longer requires this, dummy input?)
+  s3_sync.aws_access_key_id          = AWS_ACCESS_KEY
+  s3_sync.aws_secret_access_key      = AWS_SECRET
+  s3_sync.delete                     = true # We delete stray files by default.
+  # s3_sync.after_build                = false # We do not chain after the build step by default.
+  # s3_sync.prefer_gzip                = true
+  # s3_sync.path_style                 = true
+  # s3_sync.reduced_redundancy_storage = false
+  # s3_sync.acl                        = 'public-read'
+  # s3_sync.encryption                 = false
+  # s3_sync.prefix                     = ''
+  # s3_sync.version_bucket             = false
+end
+
+
+#AWS_CLOUDFRONT_DISTRIBUTION_ID  = 'xxxxxxxxxxxx'
+#GOOGLE_ANALYTICS_ID             = 'UA-XXXXXXX-X'
+
 ###
 # Compass
 ###
