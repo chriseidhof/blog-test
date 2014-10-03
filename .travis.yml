@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.0.0
 script: bundle exec middleman build
-after_success: bundle exec rake mm:publish
+after_success: bundle exec rake publish
 env:
   global:
   - secure: N6Da0zAQas3BF9WmFbEgsF6ZLdzp4chWBdfzVW3jUeHdiMW6szkZhUBhDSugCAdNSlQBzBhOEfCDQQyLQevWYG8ErLCNNihmcDmDWvVjAKJ/opKqL7gbm+7YGAWoxwBz1/M4YK8/DQa3oxIVDkXuCMd6F+tecZpoEwkapQzWTt0=
