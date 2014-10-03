@@ -11,5 +11,5 @@ task :deploy do
 end
 
 desc 'One step clobber, build, deploy'
-task :publish => ["mm:clobber", "mm:build", :deploy] do
+task :publish => [:deploy] do
 end
